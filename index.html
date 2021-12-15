@@ -59,7 +59,7 @@
         </div>
       </section>
       <!--BENEFITS-->
-      <section class="section benefits">
+      <section class="section-benefits">
         <div class="container">
           <ul class="benefits list benefits-list">
             
@@ -402,7 +402,7 @@
         <div class="join">
       
   <input class="join-input" type="email" name="userEmail" placeholder="E-mail"/>
-<button class="join-button button" type="button">
+<button class="join-button button" type="submit">
             Подписаться
           </button>
           <svg class="join-icon" width="24" height="24"><use href="./images/svg/icons.svg#icon-send"></use>
@@ -411,6 +411,7 @@
   </div>
         </div>
     </footer>
+
     <!-- Modal Window -->
     <div class= "backdrop is-hidden" data-modal> 
 <div class= "modal">
@@ -420,7 +421,6 @@
   </button>
  <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
   <form class="modal-form" action="#" name="signup_form" autocomplete="on" novalidate>
-
 <div class="modal-field">
     <label class="modal-label" for="userTel">Имя</label>
     <div class="input-wrap">
@@ -429,7 +429,6 @@
   </svg>
   </div>
 </div>
-
 <div class="modal-field">
   <label class="modal-label" for="userTel">Телефон</label>
   <div class="input-wrap">
@@ -438,8 +437,6 @@
   </svg>
 </div>
  </div>
-
-  
     <div class="modal-field">
    <label class="modal-label" for="userEmail">Почта</label>
    <div class="input-wrap">
@@ -448,13 +445,10 @@
   </svg>
 </div>
 </div>
-
-
 <div class="modal-field">
    <label class="modal-label" for="userText">Комментарий</label>
 <textarea class="modal-text" name="userText"id="userText" placeholder="Введите текст"></textarea>
 </div>
-
 <div class="modal-policy">
 <input class="modal-check visually-hidden" type="checkbox" name="policy"id="policy">
 <label class="check-text" for="policy">Соглашаюсь с рассылкой и принимаю &nbsp</label>
