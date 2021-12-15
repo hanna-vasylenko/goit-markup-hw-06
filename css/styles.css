@@ -584,6 +584,8 @@ address {
   border: none;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-button:hover,
@@ -677,6 +679,7 @@ address {
   border-radius: 50%;
   justify-content: center;
   text-align: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn:hover svg {
@@ -757,6 +760,7 @@ address {
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input {
@@ -770,6 +774,7 @@ address {
   color: #2196f3;
   font-size: 14px;
   outline: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus {
@@ -801,6 +806,7 @@ address {
   font-size: 14px;
   outline: none;
   resize: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-text:focus {
@@ -815,6 +821,8 @@ address {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .check-text::before {
