@@ -561,6 +561,76 @@ address {
   margin-bottom: 10px;
 }
 
+.join {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.join-button {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  background-color: var(--accent-color);
+  padding: 10px 66px 10px 46px;
+  min-width: 200px;
+  justify-content: center;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.join-button:hover,
+.join-button:focus {
+  color: var(--accent-color);
+  background-color: var(--title-text-color);
+}
+
+.join-icon {
+  position: absolute;
+  right: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 10px;
+}
+
+.join-input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+  padding-left: 16px;
+}
+
+.join-container h3 {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.join-container {
+  align-items: baseline;
+  margin-left: 93px;
+  width: 570px;
+  height: 86px;
+}
+
 /* MODAL FORM */
 
 .backdrop {
@@ -593,9 +663,11 @@ address {
 }
 
 .modal-close-btn {
+  display: block;
   position: absolute;
   top: 8px;
   right: 8px;
+  padding: 4px 3px 3px 3px;
   width: 30px;
   height: 30px;
   background-color: transparent;
@@ -605,6 +677,10 @@ address {
   border-radius: 50%;
   justify-content: center;
   text-align: center;
+}
+
+.modal-close-btn:hover svg {
+  fill: var(--accent-color);
 }
 
 .backdrop.is-hidden {
@@ -671,6 +747,7 @@ address {
   color: var(--title-text-color);
   margin-bottom: 20px;
 }
+
 .input-wrap {
   position: relative;
 }
@@ -682,25 +759,25 @@ address {
   transform: translateY(-50%);
 }
 
-.input-icon {
-  position: absolute;
-  left: 8px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 .modal-input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
+  padding-left: 25px;
   border-radius: 4px;
-  /* box-sizing: border-box; */
   padding: 10px;
   padding-left: 42px;
   color: #2196f3;
   font-size: 14px;
   outline: none;
+}
+
+.modal-input:focus {
+  border-color: var(--accent-color);
+}
+
+.modal-input:focus + .input-icon {
+  fill: var(--accent-color);
 }
 
 .modal-field {
@@ -723,6 +800,11 @@ address {
   color: var(--accent-color);
   font-size: 14px;
   outline: none;
+  resize: none;
+}
+
+.modal-text:focus {
+  border-color: var(--accent-color);
 }
 
 .check-text {
@@ -765,6 +847,34 @@ address {
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: var(--accent-color);
+}
+
+.submit-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  align-items: center;
+  display: block;
+  text-align: center;
+  color: #ffffff;
+  background-color: var(--accent-color);
+  padding: 10px 56px;
+  min-width: 200px;
+  margin: 30px 124px 40px 124px;
+  justify-content: center;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+  color: var(--accent-color);
+  background-color: #ffffff;
 }
 
 .work-list {

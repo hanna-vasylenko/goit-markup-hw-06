@@ -396,36 +396,53 @@
           </li>
         </ul>
         </div>
-      </div>
+
+        <div class="join-container">
+        <h3>Подпишитесь на рассылку</h3>
+        <div class="join">
+      
+  <input class="join-input" type="email" name="userEmail" placeholder="E-mail"/>
+<button class="join-button button" type="button">
+            Подписаться
+          </button>
+          <svg class="join-icon" width="24" height="24"><use href="./images/svg/icons.svg#icon-send"></use>
+              </svg>  
+  </div>
+  </div>
+        </div>
     </footer>
     <!-- Modal Window -->
     <div class= "backdrop is-hidden" data-modal> 
 <div class= "modal">
   <button class="modal-close-btn"type="button" data-modal-close>
-    <svg class="close-icon" width="11" height="11"><use href="./images/svg/icons.svg#icon-close-button"></use>
+    <svg class="close-icon" width="18" height="18"><use href="./images/svg/icons.svg#icon-close-button"></use>
               </svg>
   </button>
  <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
   <form class="modal-form" action="#" name="signup_form" autocomplete="on" novalidate>
+
 <div class="modal-field">
-  <div class="input-wrap">
     <label class="modal-label" for="userTel">Имя</label>
+    <div class="input-wrap">
   <input class="modal-input" type="text" name="userName" id="user_password" />
   <svg class="input-icon" width="18" height="18"> <use href="./images/svg/icons.svg#icon-person-modal"> </use>
   </svg>
   </div>
 </div>
+
 <div class="modal-field">
-  <div class="input-wrap">
   <label class="modal-label" for="userTel">Телефон</label>
+  <div class="input-wrap">
   <input class="modal-input" name="userTel" id="userTel" title="+38(098)999-88-88" />
   <svg class="input-icon" width="18" height="18"> <use href="./images/svg/icons.svg#icon-phone-modal"> </use>
   </svg>
 </div>
  </div>
-<div class="modal-field">
-  <div class="input-wrap">
+
+  
+    <div class="modal-field">
    <label class="modal-label" for="userEmail">Почта</label>
+   <div class="input-wrap">
   <input class="modal-input" type="email" name="userEmail" id="userEmail" />
   <svg class="input-icon" width="18" height="18"> <use href="./images/svg/icons.svg#icon-email-modal"> </use>
   </svg>
@@ -444,10 +461,7 @@
 <a class="check-link" href="">Условия договора</a>
 </div>
   
-
-
-  <button type="submit">Отправить</button>
-  <!-- <button type="reset">reset</button> -->
+  <button class="submit-btn" type="submit" >Отправить</button>
 
 </form>
 </div>
